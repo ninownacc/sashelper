@@ -112,7 +112,7 @@ HISTORY:
 						create table _temp_out_ds_with_woe as
 							select a.*
 								,b.&var_in._woe
-							from &ds_in a left join _temp_woe b
+							from &ds_in a left join &ds_woe_out b
 								on a.&var_in. = b.&var_in.;
 					quit;
 
@@ -158,7 +158,7 @@ HISTORY:
 						create table _temp_out_ds_with_woe as
 							select a.*
 								,b.&var_in._woe
-							from &ds_in a left join _temp_woe b
+							from &ds_in a left join &ds_woe_out b
 								on a.&var_in. = b.&var_in.;
 					quit;
 
