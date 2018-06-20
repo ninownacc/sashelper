@@ -121,7 +121,7 @@ HISTORY:
 						set _temp_out_ds_with_woe;
 
 						if missing(&var_in._woe) then
-							&var_in._woe = &p_1.;
+							&var_in._woe = log(&p_1./(1-&p_1.));
 					run;
 
 				%end;
